@@ -12,7 +12,8 @@ filters.forEach((btn) => {
 		btn.classList.add('active');
 
 		if (btn.id === 'all') {
-            const all = todos.map((todo, index) => {
+            const result1 = todos.filter((todoItem) => true);
+            const all = result1.map((todo, index) => {
                 return `
                   <li class="task">
                     <label for="checked">
